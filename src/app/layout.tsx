@@ -17,8 +17,13 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pharma News | Dược lâm sàng & Y khoa học thuật",
+    default: "Pharma News | Clinical Pharmacy",
     template: "%s | Pharma News",
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   description:
     "Cập nhật tin tức, kiến thức và góc nhìn học thuật trong lĩnh vực dược lâm sàng.",
