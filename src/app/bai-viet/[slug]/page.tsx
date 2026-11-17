@@ -27,6 +27,28 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const relatedArticles = (await getArticlesByCategory(article.categorySlug))
     .filter((related) => related.slug !== article.slug)
     .slice(0, 4);
+  type NumberedTocItem = (typeof article.toc)[number] & { number: string };
+  const tocItems = article.toc.reduce<{
+    h1Count: number;
+    h2Count: number;
+    items: NumberedTocItem[];
+  }>(
+    (counts, item) => {
+      const h1Count = item.level === 1 ? counts.h1Count + 1 : counts.h1Count;
+      const h2Count = item.level === 1 ? 0 : counts.h2Count + 1;
+      const number =
+        item.level === 1
+          ? `${h1Count}.`
+          : `${h1Count}.${h2Count}.`;
+
+      return {
+        h1Count,
+        h2Count,
+        items: [...counts.items, { ...item, number }],
+      };
+    },
+    { h1Count: 0, h2Count: 0, items: [] },
+  ).items;
 
   return (
     <main className="site-shell article-page">
@@ -85,13 +107,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {article.toc.length > 0 ? (
               <nav aria-label="Mục lục bài viết">
                 <ol className="toc-list">
-                  {article.toc.map((item, index) => (
+                  {tocItems.map((item) => (
                     <li
                       className={item.level === 2 ? "toc-level-two" : ""}
                       key={item.id}
                     >
                       <a href={`#${item.id}`}>
-                        <span className="toc-number">{String(index + 1).padStart(2, "0")}</span>
+                        <span className="toc-number">{item.number}</span>
                         <span>{item.text}</span>
                       </a>
                     </li>

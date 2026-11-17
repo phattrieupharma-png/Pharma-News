@@ -996,13 +996,19 @@ input {
 
 .toc-number {
   flex: 0 0 auto;
-  color: #9aabba;
-  font-size: 8px;
+  color: #557a98;
+  font-size: 12px;
   font-weight: 700;
 }
 
+.toc-level-two .toc-number {
+  color: #8999a8;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .toc-level-two a {
-  padding-left: 15px;
+  padding-left: 20px;
   color: #718096;
 }
 
