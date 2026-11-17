@@ -295,7 +295,7 @@ input {
 
 .hero-feature-copy h1 {
   max-width: 760px;
-  margin: 13px 0 10px;
+  margin: 0 0 10px;
   font-size: clamp(24px, 3vw, 36px);
   line-height: 1.38;
 }
@@ -315,12 +315,13 @@ input {
 
 .category-badge {
   width: fit-content;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 5px 8px;
-  border-radius: 3px;
-  font-size: 9px;
-  font-weight: 700;
+  margin-bottom: 12px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 1.2;
 }
@@ -449,13 +450,8 @@ input {
   min-width: 0;
 }
 
-.compact-article-copy .category-badge {
-  padding: 3px 6px;
-  font-size: 8px;
-}
-
 .compact-article-copy h3 {
-  margin: 7px 0 5px;
+  margin: 0 0 5px;
   color: #25384a;
   font-family: var(--font-merriweather), Georgia, serif;
   font-size: 14px;
@@ -628,7 +624,7 @@ input {
 }
 
 .article-card-title {
-  margin: 10px 0 7px;
+  margin: 0 0 7px;
   color: #21364a;
   font-family: var(--font-merriweather), Georgia, serif;
   font-size: 15px;
@@ -1250,7 +1246,7 @@ input {
   }
 
   .hero-feature-copy h1 {
-    margin-top: 10px;
+    margin-top: 0;
     font-size: 25px;
     line-height: 1.4;
   }
@@ -1315,7 +1311,7 @@ input {
   }
 
   .article-card-title {
-    margin: 8px 0 5px;
+    margin: 0 0 5px;
     font-size: 12px;
     line-height: 1.5;
   }
