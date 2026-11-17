@@ -27,13 +27,6 @@ export default async function HomePage() {
   return (
     <main>
       <section className="site-shell home-hero-section">
-        <div className="section-kicker">
-          <span className="kicker-line" />
-          <span>TRI THỨC DƯỢC LÂM SÀNG</span>
-          <span className="kicker-dot" />
-          <span>CẬP NHẬT HỌC THUẬT</span>
-        </div>
-
         {featured ? (
           <div className="hero-grid">
             <article className="hero-feature">

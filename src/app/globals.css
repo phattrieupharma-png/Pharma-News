@@ -63,7 +63,7 @@ input {
 .topline {
   background: var(--navy-deep);
   color: #d9e8f5;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.035em;
 }
 
@@ -110,14 +110,14 @@ input {
 .brand-name {
   color: var(--navy-deep);
   font-family: var(--font-merriweather), Georgia, serif;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.045em;
 }
 
 .brand-caption {
   color: #7a8a9b;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
@@ -147,7 +147,7 @@ input {
   outline: 0;
   background: transparent;
   color: var(--ink);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .header-search input::placeholder {
@@ -196,8 +196,8 @@ input {
   display: inline-flex;
   align-items: center;
   color: #475569;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   transition: color 160ms ease;
 }
 
@@ -227,7 +227,6 @@ input {
   padding-bottom: 50px;
 }
 
-.section-kicker,
 .eyebrow {
   color: #6b8195;
   font-size: 9px;
@@ -235,26 +234,6 @@ input {
   letter-spacing: 0.15em;
   line-height: 1.5;
   text-transform: uppercase;
-}
-
-.section-kicker {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.kicker-line {
-  width: 24px;
-  height: 2px;
-  background: var(--navy);
-}
-
-.kicker-dot {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: #9aabba;
 }
 
 .hero-grid {
@@ -366,7 +345,7 @@ input {
   flex-wrap: wrap;
   gap: 9px 18px;
   color: #718096;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .article-card-meta span,
@@ -479,7 +458,7 @@ input {
   margin: 7px 0 5px;
   color: #25384a;
   font-family: var(--font-merriweather), Georgia, serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.55;
 }
@@ -491,7 +470,7 @@ input {
 .compact-article-copy p {
   margin: 0;
   color: #8997a5;
-  font-size: 9px;
+  font-size: 14px;
 }
 
 .compact-arrow {
@@ -663,7 +642,7 @@ input {
   overflow: hidden;
   margin: 0 0 14px;
   color: #69798a;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.7;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -759,7 +738,7 @@ input {
   overflow: hidden;
   margin-bottom: 28px;
   color: #8795a3;
-  font-size: 10px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -800,7 +779,7 @@ input {
   flex-wrap: wrap;
   gap: 10px 22px;
   color: #657789;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .article-summary {
@@ -815,7 +794,7 @@ input {
 
 .summary-label {
   color: #557a98;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
@@ -824,7 +803,7 @@ input {
   margin: 8px 0 0;
   color: #41576b;
   font-family: var(--font-merriweather), Georgia, serif;
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
   line-height: 1.85;
 }
@@ -1010,7 +989,7 @@ input {
   gap: 9px;
   padding: 10px 0;
   color: #4a5d6e;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
   transition: color 140ms ease;
 }
@@ -1058,7 +1037,7 @@ input {
 }
 
 .related-list .compact-article-copy h3 {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .article-end {
@@ -1210,7 +1189,7 @@ input {
 
   .topline-inner {
     min-height: 29px;
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .topline-note {
@@ -1230,11 +1209,11 @@ input {
   }
 
   .brand-name {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .brand-caption {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .header-search {
@@ -1252,22 +1231,9 @@ input {
     gap: 25px;
   }
 
-  .nav-link {
-    font-size: 11px;
-  }
-
   .home-hero-section {
     padding-top: 26px;
     padding-bottom: 35px;
-  }
-
-  .section-kicker {
-    gap: 7px;
-    font-size: 7px;
-  }
-
-  .kicker-line {
-    width: 18px;
   }
 
   .hero-grid {
@@ -1290,7 +1256,7 @@ input {
   }
 
   .hero-summary {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .latest-panel {
@@ -1356,13 +1322,13 @@ input {
 
   .article-card-summary {
     margin-bottom: 8px;
-    font-size: 10px;
+    font-size: 14px;
     -webkit-line-clamp: 2;
   }
 
   .article-card-meta {
     gap: 5px 10px;
-    font-size: 8px;
+    font-size: 14px;
   }
 
   .article-card-body .article-card-meta {
@@ -1401,7 +1367,6 @@ input {
 
   .breadcrumb {
     margin-bottom: 21px;
-    font-size: 9px;
   }
 
   .article-layout {
@@ -1417,10 +1382,6 @@ input {
   .article-summary {
     margin-top: 19px;
     padding: 15px 16px;
-  }
-
-  .article-summary p {
-    font-size: 12px;
   }
 
   .article-content {
