@@ -105,21 +105,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <span className="eyebrow">ĐIỀU HƯỚNG</span>
             <h2>Mục lục bài viết</h2>
             {article.toc.length > 0 ? (
-              <nav aria-label="Mục lục bài viết">
-                <ol className="toc-list">
-                  {tocItems.map((item) => (
-                    <li
-                      className={item.level === 2 ? "toc-level-two" : ""}
-                      key={item.id}
-                    >
-                      <a href={`#${item.id}`}>
-                        <span className="toc-number">{item.number}</span>
-                        <span>{item.text}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </nav>
+              <div className="toc-scroll">
+                <nav aria-label="Mục lục bài viết">
+                  <ol className="toc-list">
+                    {tocItems.map((item) => (
+                      <li
+                        className={item.level === 2 ? "toc-level-two" : ""}
+                        key={item.id}
+                      >
+                        <a href={`#${item.id}`}>
+                          <span className="toc-number">{item.number}</span>
+                          <span>{item.text}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </nav>
+              </div>
             ) : (
               <p className="sidebar-muted">Bài viết chưa có đề mục.</p>
             )}
